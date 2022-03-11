@@ -6,10 +6,8 @@ for (std::vector<int>::size_type i=0; i<Sy.NMO.size(); i++) {
     printf("%d ",Sy.NMO[i]);
 }
 printf("\n");
-
-/*
 printf("Hole: ");
-for (std::vector<int>::size_type i=0; i<NMO.size(); i++) {
+for (std::vector<int>::size_type i=0; i<Sy.NMO.size(); i++) {
     if (i==hsym) {
         printf("%d ",hocc);
     } else {
@@ -18,9 +16,8 @@ for (std::vector<int>::size_type i=0; i<NMO.size(); i++) {
 }
 printf("\nSpin: %d\n",hspin);
 printf("\nBinding energy after the hole (eV): %5.3f\n",BE*energy_au_eV);
-*/
 
-printf("\nPhoton energy: %3.3f au, %3.3f eV\n",omega,omega*energy_au_eV);
+printf("\nElectron energy: %3.3f au, %3.3f eV\n",epsilon,epsilon*energy_au_eV);
 printf("One-center spatial grid:\n");
 printf("Parameters for angular grid\n");
 printf("Max L: %i\n",Lmax);

@@ -1,0 +1,20 @@
+Program: Molcas
+Energy: 2.
+Spatial_Grid_Rmax: 15.
+Maximum_R_for_MOs: 5.
+Lmax: 2
+Mmax: 2
+Angular_integration_#theta: 100
+Angular_integration_#varphi: 20
+Radial_grid_dh: 0.01
+Radial_grid_Ar: 1.
+Radial_grid_Br: 0.
+Theory_level: CASSCF
+Point_group: nosymm
+MOs: 10
+Hole.orbital: 1
+Hole.spin: a
+Binding_Energy: 19.937
+Cube_path: CO_gridit/n
+Occupation_path: CO_gridit/occ.txt
+

@@ -1,0 +1,36 @@
+&GATEWAY
+Title= cubes files for CO casscf theory
+coord=geom.xyz
+basis = 6-31g*
+* find the symmetry
+group = nosym 
+
+ricd
+&SEWARD
+
+* >> COPY $CurrDir/INPORB INPORB
+
+&scf
+* charge = 0
+
+&RASSCF
+ALTEr= 1; 1 10 14;
+inactive
+4
+ras2
+6
+nactel
+6 0 0
+Symmetry = 1
+ciroot = 3 3 1
+
+>> EXIT
+&GRID_IT
+Dense
+* NPOINTS 120,120,120
+Select
+1:1-5
+
+
+
+
